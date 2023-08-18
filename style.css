@@ -1,0 +1,221 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:40px 0;
+    width: 100%;
+    min-width: fit-content;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    list-style: none;
+    /* margin: 0 40px; */
+}
+.menu li a {
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 20px;
+    color: rgba(111, 107, 107, 0.819);
+}
+.img{
+    margin-left:10rem;
+    width: 10rem;
+}
+.sign-button{
+    margin-right: 10rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.sign-button a{
+    color: rgba(111, 107, 107, 0.819);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button{
+    background-color: rgb(5, 33, 5);
+    color: white;
+    padding:20px 40px;
+    border-radius: 5px;
+}
+
+.products-hover{
+    width: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+}
+.products-hover p{
+    margin:20px;
+}
+.head-svg{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.link{
+    position: relative;
+}
+#link:hover{
+    .products-hover{
+        display:flex;
+        margin-top: 40px;
+    }
+}
+
+
+/* mobiel menu part */
+.mobile-menu{
+    display: none;
+    position: relative;
+}
+
+#mobile-menu2{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+#mobile-menu2  li a{
+    text-decoration: none;
+    color: rgba(111, 107, 107, 0.819);
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+#mobile-menu2, .close-img {
+    display: none;
+    width: 60px;
+    }
+    .open-img {
+    display: block;
+    width: 60px;
+    }
+    @media screen and (max-width: 640px) {
+        .navbar{
+          display: none;
+        }
+        .mobile-menu{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin-top: 2rem;
+           
+        }
+        #mobile-menu2{
+            position: absolute;
+            right: 0;
+            margin: 25px 100px;
+        }
+
+        #mobile-menu2  li a{
+            /* padding-bottom: 40px; */
+        }
+    }
+
+
+    /* hero section */
+    .hero{
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 90px;
+        margin-top:10rem;
+        width:100%;
+    }
+    .hero-left-side{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        gap: 40px;
+        margin-left: 10rem;
+    }
+    .hero-left-side h1{
+        font-size: 4rem;
+       
+    }
+
+    .hero-left-side p{
+        color: rgba(111, 107, 107, 0.819);
+        font-size: 30px;
+    } 
+
+    @media screen and (max-width: 640px) {
+
+        .hero{ 
+            margin-top:4rem;
+        }
+
+        .hero-left-side{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: start;
+            gap: 40px;
+            margin-left: 3rem;
+        }
+
+    }
+
+    /* company section  */
+
+    .company-section{
+         margin-top: 10rem; 
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         gap: 2rem;
+    }
+    .company-section p{
+      color: rgba(111, 107, 107, 0.819);
+      font-size: 30px;
+        
+    }
+
+     .company-img{
+        display: flex;
+        gap: 4rem;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 640px) {
+     
+        .company-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+        
+    }
